@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Weather service archive</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script src="styles.js"></script>
+    <script src="log.js"></script>
+    <script src="rpc.js"></script>
+    <script src="indexed_db.js"></script>
+    <script src="data_storage.js"></script>
+    <script src="data_processor.js"></script>
+    <script src="canvas.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+<div class="messages_container">
+    <span id="status_message"></span>
+    <span id="error_message"></span>
+</div>
+<table class="page_main_grid" id="data_view">
+    <thead>
+    <tr><th><h1>Weather service archive<span id="liveness"></span></h1></th></tr>
+    </thead>
+    <tr><td><table class="data_view_grid">
+        <tr class="toolbar">
+            <td rowspan="3" class="buttons_grid_block"><button id="temperature_button">Temperature</button><button id="precipitation_button">Precipitation</button></td>
+            <td><select id="from_year"></select></td>
+            <td><select id="to_year"></select></td>
+            <td><button id="reset_years">Reset</button></td>
+            <td class="point_data_block"><span id="point_data"></span></td>
+        </tr>
+        <tr>
+            <td colspan="4" class="canvas_grid_block"><canvas id="graph"></canvas><canvas id="overlay"></canvas></td>
+        </tr>
+    </table></td></tr>
+</table>
+</body>
+</html>

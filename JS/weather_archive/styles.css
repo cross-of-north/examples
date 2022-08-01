@@ -1,0 +1,150 @@
+body {
+    overflow: hidden;
+    width:100%;
+    height:100%;
+    font-family: Verdana, sans-serif;
+}
+
+* {
+    margin:0;
+    padding:0;
+}
+
+.page_main_grid
+{
+    width: 100%;
+}
+
+.page_main_grid,
+.page_main_grid tr,
+.page_main_grid td
+{
+    padding: 0;
+    margin: 0;
+    border-width: 0;
+}
+
+.messages_container {
+    background-color: transparent;
+    width: 100%;
+    position: absolute;
+    text-align: right;
+    font-size: 10pt;
+}
+
+#status_message {
+    font-weight: bold;
+    color: navy;
+    background-color: transparent;
+    display: none;
+    padding: 0.3em;
+    margin-right: 1em;
+    z-index: 10;
+    white-space: pre;
+}
+
+#error_message {
+    font-weight: bold;
+    color: white;
+    background-color: red;
+    display: none;
+    padding: 0.3em;
+    z-index: 100;
+    text-align: center;
+    white-space: pre;
+}
+
+.data_view_grid {
+    width: 100%;
+}
+
+#data_view #precipitation_button,
+#data_view #temperature_button
+{
+    display: block;
+}
+
+#data_view .buttons_grid_block {
+    vertical-align: top;
+    width: 1%;
+    padding-right: 0.3em;
+}
+
+#data_view .canvas_grid_block {
+    width: 100%;
+    padding: 0 10px 10px 0;
+    vertical-align: top;
+}
+
+#data_view .point_data_block {
+    text-align: left;
+    width: 100%;
+    padding-left: 2em;
+}
+
+#data_view #point_data {
+    font-family: monospace;
+}
+
+#data_view canvas {
+    margin: 0;
+    display: block;
+    image-rendering: optimizeSpeed;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: optimize-contrast;
+    -ms-interpolation-mode: nearest-neighbor;
+    position: absolute;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #808080;
+    cursor: crosshair;
+}
+
+#data_view #graph {
+    z-index: 100;
+}
+
+#data_view #overlay {
+    z-index: 10;
+}
+
+#data_view select {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #808080;
+    color: #808080;
+    background-color: white;
+}
+
+#data_view button {
+    border-style: none;
+    padding: 0.5em;
+    width: 100%;
+    margin-top: 2px;
+    margin-bottom: 0.3em;
+    background-color: #808080;
+    color: white;
+    font-size: 12pt;
+}
+
+#data_view #reset_years {
+    visibility: hidden;
+    font-size: 9pt;
+    padding: 3px;
+    margin: 0;
+}
+
+#data_view h1 {
+    font-size: 13pt;
+    font-weight: normal;
+    text-align: left;
+    margin-bottom: 0.5em;
+}
+
+#data_view .data_view_grid .toolbar {
+    height: 1px;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+}
