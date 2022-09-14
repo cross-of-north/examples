@@ -7,6 +7,7 @@
 - [JS](JS)
    - [Graph editor parts.](JS/graph_editor)
    - [Node.js modules.](JS/node.js)
+   - [Weather archive statistics data display.](JS/weather_archive)
 
 - [Kotlin](Kotlin)
    - [Unique IP counter, effective large data set processing.](Kotlin)
