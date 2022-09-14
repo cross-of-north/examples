@@ -1,5 +1,6 @@
 - [C++](C++)
    - [Windows application configuration parser and editor parts.](C++/config)
+   - [Glob-like pattern search in files.](C++/glob)
    - [Node.js native module parts.](C++/node.js)
    - [Associative array with change monitoring.](C++/string_map_with_changes)
 
