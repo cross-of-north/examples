@@ -2,6 +2,10 @@
 
   Windows application configuration parser and editor parts.
 
+- [glob](glob)
+
+  Glob-like pattern search in files.
+
 - [node.js](node.js)
 
   Node.js native module parts.
